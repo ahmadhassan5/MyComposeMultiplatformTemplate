@@ -1,0 +1,61 @@
+[versions]
+# Define the dependency versions
+kotlin = "1.8.00"
+compose = "1.2.1"
+kotlinxDateTime = "0.4.0"
+coroutines = "1.6.4"
+koin = "3.4.0"
+ktor = "2.2.3"
+koinCompose = "1.0.0"
+sqlDelight = "2.0.0-alpha05"
+decompose = "1.0.0"
+preCompose = "1.3.15"
+decompose-compose-experimental = "1.0.0-compose-experimental"
+
+compileSdk = "33"
+minSdk = "21"
+targetSdk = "33"
+versionCode = "1"
+versionName = "1.0"
+
+[libraries]
+# Define the libraries
+
+preCompose = { module = "moe.tlaster:precompose", version.ref = "preCompose" }
+
+decompose = { module = "com.arkivanov.decompose:decompose", version.ref = "decompose-compose-experimental" }
+decompose_extensions = { module = "com.arkivanov.decompose:extensions-compose-jetbrains", version.ref = "decompose-compose-experimental" }
+
+koin_core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koinCompose = { module = "io.insert-koin:koin-compose", version.ref = "koinCompose" }
+koin_android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+
+ktorCore = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktorSerializationKotlinxJson = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktorClientLogging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+
+ktorAndroid = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
+ktorDarwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+ktorJAVA = { module = "io.ktor:ktor-client-java", version.ref = "ktor" }
+ktorJS = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
+
+sqlDelight_runtime = { module = "app.cash.sqldelight:runtime", version.ref = "sqlDelight" }
+sqlDelight_android = { module = "app.cash.sqldelight:android-driver", version.ref = "sqlDelight" }
+sqlDelight_native = { module = "app.cash.sqldelight:native-driver", version.ref = "sqlDelight" }
+sqlDelight_sqlite = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqlDelight" }
+
+kotlinxDateTime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDateTime" }
+coroutinesCore = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutinesSwing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
+
+compose_ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose_material = { module = "androidx.compose.material:material", version.ref = "compose" }
+compose_tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose_icons = { module = "androidx.compose.material:material-icons-extended", version.ref = "compose" }
+
+[bundles]
+# Define bundles/groups of libraries
+compose = ["compose.ui", "compose.material", "compose.tooling", "compose.icons"]
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
