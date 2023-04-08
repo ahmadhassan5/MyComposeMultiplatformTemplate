@@ -13,7 +13,7 @@ MyComposeMultiplatformTemplate is KotlinMultiplatform project with 99% shared co
 - [PreCompose](https://github.com/Tlaster/PreCompose): for navigation, ViewModel.
 - [SQLDelight](https://github.com/cashapp/sqldelight): for storage.
 - [Koin](https://github.com/InsertKoinIO/koin): for dependency injection.
-- Version Catalogue 
+- Version Catalogue: for dependency management.
 
 ## Targets
 
