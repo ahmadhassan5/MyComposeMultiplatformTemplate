@@ -11,7 +11,6 @@ MyComposeMultiplatformTemplate is KotlinMultiplatform project with 99% shared co
 
 - [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform): JetBrains Compose (UI Toolkit).
 - [PreCompose](https://github.com/Tlaster/PreCompose): for navigation, ViewModel.
-- [SQLDelight](https://github.com/cashapp/sqldelight): for storage.
 - [Koin](https://github.com/InsertKoinIO/koin): for dependency injection.
 - Version Catalogue: for dependency management.
 
